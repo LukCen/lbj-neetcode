@@ -11,8 +11,6 @@ Continue the simulation until there is no more than one stone remaining.
 Return the weight of the last remaining stone or return 0 if none remain.
  
  */
-
-
 /**
     * @param {number[]} stones
     * @return {number}
