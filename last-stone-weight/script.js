@@ -18,7 +18,7 @@ Return the weight of the last remaining stone or return 0 if none remain.
 
 const stones_1 = [2, 3, 6, 2, 4]
 
-function lastStoneWeight(stones) {
+export function lastStoneWeight(stones) {
   /**
    * @param {number[]} sorted 
    */
