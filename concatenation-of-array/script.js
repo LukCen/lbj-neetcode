@@ -14,14 +14,12 @@
 // 1 <= nums.length <= 1000.
 // 1 <= nums[i] <= 1000
 
-
-
 /**
  * 
  * @param {number[]} nums 
  * @returns 
  */
-function getConcatenation(nums) {
+export function getConcatenation(nums) {
   return [...nums, ...nums]
 }
 
