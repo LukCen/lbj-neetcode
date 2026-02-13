@@ -3,28 +3,27 @@ const strs = ["act", "pots", "tops", "cat", "stop", "hat"]
 /**
  * @param {Array<string>} strs 
  */
-function groupAnagrams(strs) {
-  const output = []
-  function uniques(el) {
-    let seen = {}
-    return el.filter((item) => {
-      return seen.hasOwnProperty(item) ? false : (seen[item] = true)
-    })
-  }
-  strs.map((elem) => {
-    const stringified = elem.split("").sort()
-    output.push(strs.filter((el) =>
-      el.split("").sort().every((e) => stringified.includes(e))
-    ))
+// function groupAnagrams(strs) {
+//   const output = []
+//   function uniques(el) {
+//     let seen = {}
+//     return el.filter((item) => {
+//       return seen.hasOwnProperty(item) ? false : (seen[item] = true)
+//     })
+//   }
+//   strs.map((elem) => {
+//     const stringified = elem.split("").sort()
+//     output.push(strs.filter((el) =>
+//       el.split("").sort().every((e) => stringified.includes(e))
+//     ))
 
-  })
+//   })
 
-  const final = uniques(output)
-  return final
-}
+//   const final = uniques(output)
+//   return final
+// }
 
-console.log(groupAnagrams(strs))
-
+// console.log(groupAnagrams(strs))
 
 /**
  * 
@@ -34,7 +33,7 @@ console.log(groupAnagrams(strs))
  * 
  */
 
-function groupAnagrams(strs) {
+export function groupAnagrams(strs) {
   const output = []
   function uniques(el) {
     let seen = {}
@@ -55,3 +54,4 @@ function groupAnagrams(strs) {
   const final = uniques(output)
   return final
 }
+console.log(groupAnagrams(strs))
