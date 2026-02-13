@@ -1,14 +1,9 @@
 // You are given an integer n representing the number of steps to reach the top of a staircase. You can climb with either 1 or 2 steps at a time.
 // Return the number of distinct ways to climb to the top of the staircase.
 
-function climbingStairs(i, n) {
 
-  if (i > n) return 0;
-  if (i === n) return 1
-  return climbingStairs(i + 1, n) + climbingStairs(i + 2, n)
-}
 
-function climbStairs(n) {
+export function climbStairs(n) {
   if (n == 0 || n == 1) return n
 
   let first = 1
