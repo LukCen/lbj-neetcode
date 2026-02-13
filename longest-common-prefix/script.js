@@ -27,7 +27,7 @@ const strs_3 = ["neet", "feet"]
  * 
  * @param {string[]} strs 
  */
-function longestCommonPrefix(strs) {
+export function longestCommonPrefix(strs) {
   const common = []
   const stringified = []
   let shortest = 0
