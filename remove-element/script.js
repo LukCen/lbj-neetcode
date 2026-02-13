@@ -26,9 +26,7 @@
 // 0 <= nums[i] <= 50
 // 0 <= val <= 100
 
-
 const nums = [1, 1, 2, 3, 4]
-
 
 /**
     * @param {number[]} nums
@@ -40,8 +38,7 @@ const nums = [1, 1, 2, 3, 4]
 //   return filtered
 // }
 
-
-function removeElement(nums, val) {
+export function removeElement(nums, val) {
   let writer = 0
   let reader = 0
 
