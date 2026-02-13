@@ -22,7 +22,7 @@
  * @return {number}
 */
 const nums = [5, 5, 1, 1, 1, 5, 5]
-function majorityElement(nums) {
+export function majorityElement(nums) {
   const numMap = new Map()
   for (let i = 0; i < nums.length; i++) {
     if (numMap.has(nums[i])) {
