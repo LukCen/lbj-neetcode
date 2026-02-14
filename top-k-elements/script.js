@@ -6,12 +6,11 @@ The test cases are generated such that the answer is always unique.
 You may return the output in any order.
  */
 
-nums = [1, 2, 2, 3, 3, 3]
 
-
-function topKFrequent(nums, k) {
+export function topKFrequent(nums, k) {
   const results = []
   const final = []
+  if (nums.length === 0) return []
   const output = nums.reduce((acc, item) => {
     if (acc[item]) {
       ++acc[item]
