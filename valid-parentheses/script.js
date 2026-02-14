@@ -14,7 +14,7 @@ const string_1 = "[[[]"
  * @param {string} string 
  */
 
-function isValid(string) {
+export function isValid(string) {
   const stack = []
   const intoStrings = string.split("")
   const openingBrackets = ["(", "[", "{"]
