@@ -22,17 +22,16 @@ function twoSum(nums, target) {
 const numbers_2 = [0, 2, 10, 4, 1, 7]
 const target_2 = 14
 
-function twoSum_2(nums, target) {
+export function twoSum_2(nums, target) {
   const storage = new Map()
   let indexOfComponent = null
   for (let i = 0; i < nums.length; i++) {
     const complement = target - nums[i]
     if (!storage.has(complement)) {
       storage.set(nums[i], i)
-      console.log(storage)
+      // console.log(storage)
     }
     else return [i, storage.get(complement)]
   }
   return [indexOfComponent, storage[1]]
 }
-console.log(twoSum_2(numbers_2, target_2))
