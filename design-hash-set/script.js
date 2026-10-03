@@ -9,16 +9,12 @@ class MyHashSet {
      * @return {void}
      */
     add(key) {
-        if(this.instance.length === 0) {
-            this.instance.push(key)
-            return
-        } else {
-            if(!this.instance.find((item) => item === key)){
+
+        if(!this.instance.some((item) => item === key)){
                 this.instance.push(key)
                 return
             }
             return
-        }
     }
 
     /**
@@ -26,7 +22,7 @@ class MyHashSet {
      * @return {void}
      */
     remove(key) {
-        if(this.instance.find((item) => item === key)){
+        if(this.instance.some((item) => item === key)){
             this.instance.splice(this.instance.indexOf(key), 1)
         }
     }
@@ -36,7 +32,7 @@ class MyHashSet {
      * @return {boolean}
      */
     contains(key) {
-        if(this.instance.some((item) => parseInt(key) === parseInt(item))) {
+        if(this.instance.some((item) => key === item)) {
             return true
         }
         return false
